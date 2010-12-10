@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>編集：正常登録</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">編集：正常登録</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=タイムカード</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>タイムカード一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[11]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>タイムカード編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>reason</td>
+	<td>押し忘れ</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_in_time_hour</td>
+	<td>label=9時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_in_time_minute</td>
+	<td>label=1分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_out_time_hour</td>
+	<td>label=12時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_out_time_minute</td>
+	<td>label=2分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>outgoing_time1_hour</td>
+	<td>label=10時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>outgoing_time1_minute</td>
+	<td>label=3分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>comeback_time1_hour</td>
+	<td>label=11時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>comeback_time1_minute</td>
+	<td>label=4分</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>reason</td>
+	<td>押し忘れ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>remarks</td>
+	<td>通常登録</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExtTimecard_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[10]</td>
+	<td>修正理由：押し忘れ 、 備考：通常登録</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[3]</td>
+	<td>9時1分</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[2]/td[4]</td>
+	<td>12時2分</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[5]</td>
+	<td>10時3分</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[6]</td>
+	<td>11時4分</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[7]</td>
+	<td>3.0h</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[8]</td>
+	<td>0.0h</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[9]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

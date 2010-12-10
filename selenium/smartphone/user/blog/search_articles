@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://59.106.173.26:8080/aipo/portal/" />
+<title>search_articles</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">search_articles</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ホーム</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='mainMenu']/li[2]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=記事追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>ブログ検索_１件以上_１</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>内容：ブログ検索_１件以上_１</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doBlog_entry_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=記事追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>ブログ検索_１件以上_２</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>内容：ブログ検索_１件以上_２</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doBlog_entry_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=記事追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>ブログ検索_１件以上_３</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>内容：ブログ検索_１件以上_３</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doBlog_entry_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=みんなのブログ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ブログ検索_１件以上_３</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ブログ検索_１件以上_２</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ブログ検索_１件以上_１</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=記事検索</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>指定された条件に該当する記事はありません。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>sword</td>
+	<td>ブログ検索_１件以上_１</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doBlog_search_list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='contents']/ul/li/a/strong</td>
+	<td>ブログ検索_１件以上_１</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>sword</td>
+	<td>ブログ検索_１件以上</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doBlog_search_list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='contents']/ul/li[1]/a/strong</td>
+	<td>ブログ検索_１件以上_３</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='contents']/ul/li[2]/a/strong</td>
+	<td>ブログ検索_１件以上_２</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='contents']/ul/li[3]/a/strong</td>
+	<td>ブログ検索_１件以上_１</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=記事一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ホーム</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

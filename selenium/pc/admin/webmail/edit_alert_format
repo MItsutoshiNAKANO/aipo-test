@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>接続設定_編集_エラー_形式不適合</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">接続設定_編集_エラー_形式不適合</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=メールアカウント管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>メールアカウント管理_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>test0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>root0@</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtp_port</td>
+	<td>a0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>125auth_send_id0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_mailaccount_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メールアドレス 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 送信ポート番号（SMTP） 』に正しい数値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>test0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>root0@</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtp_port</td>
+	<td>a0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>125auth_send_id1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3server_name</td>
+	<td>あいう</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3user_name</td>
+	<td>あいう</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3_password</td>
+	<td>あいう</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3_port</td>
+	<td>a0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_mailaccount_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信メールサーバ名（POP3） 』は半角英数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信用ユーザーID 』は半角英数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信用ユーザーパスワード 』は半角英数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メールアドレス 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 送信ポート番号（SMTP） 』に正しい数値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信ポート番号（POP3） 』に正しい数値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>test0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>root0@</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtp_port</td>
+	<td>a0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>125auth_send_id2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>auth_send_user_id</td>
+	<td>あいう</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>auth_send_user_password</td>
+	<td>あいう</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_mailaccount_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 SMTP認証用ユーザーID 』は半角英数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 SMTP認証用パスワード 』は半角英数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メールアドレス 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 送信ポート番号（SMTP） 』に正しい数値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>test0</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

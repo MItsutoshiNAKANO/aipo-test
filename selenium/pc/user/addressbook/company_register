@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>会社情報追加：通常登録</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">会社情報追加：通常登録</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アドレス一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=会社情報を追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>会社情報追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>company_name</td>
+	<td>テスト会社1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>company_name_kana</td>
+	<td>テストカイシャ1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_name</td>
+	<td>テスト部署1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode1</td>
+	<td>101</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode2</td>
+	<td>1001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>address</td>
+	<td>東京都練馬区大泉学園町2-0-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>0011</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>0111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number1</td>
+	<td>21</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number2</td>
+	<td>0021</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number3</td>
+	<td>0221</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>url</td>
+	<td>http://testtest1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAddressbook_company_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=テスト会社1</td>
+	<td>テスト会社1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[2]/table/tbody/tr[2]/td[3]</td>
+	<td>テスト部署1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[4]</td>
+	<td>東京都練馬区大泉学園町2-0-1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[5]</td>
+	<td>11-0011-0111</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[6]/a</td>
+	<td>HPへ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テスト会社1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>会社情報詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>テスト会社1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>テストカイシャ1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/form/table/tbody/tr[3]/td[2]</td>
+	<td>テスト部署1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>101-1001</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[5]/td[2]</td>
+	<td>東京都練馬区大泉学園町2-0-1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>11-0011-0111</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]</td>
+	<td>21-0021-0221</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[9]/td[2]/a</td>
+	<td>http://testtest1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

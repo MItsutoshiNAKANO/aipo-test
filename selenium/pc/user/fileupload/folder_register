@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>フォルダ追加：通常登録</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">フォルダ追加：通常登録</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=情報共有</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=共有フォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ファイル一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>フォルダを追加する_Button1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>フォルダ追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>folder_name</td>
+	<td>テストフォルダ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>ここにはメモをいれます</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[1]/input[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[1]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=木村 一郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>member_to</td>
+	<td>木村 一郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>member_to</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[1]/input[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>member_to</td>
+	<td>木村 一郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>member_to</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>member_to</td>
+	<td>木村 一郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doCabinet_folder_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>共有フォルダ一覧_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ルートフォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストフォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストフォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>共有フォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/form/table/tbody/tr[1]/td[2]</td>
+	<td>テストフォルダ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>ルートフォルダ &gt; テストフォルダ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>ここにはメモをいれます</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>所属メンバーのみ閲覧／追加／編集／削除可。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>木村 一郎</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>グループ追加：通常登録</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">グループ追加：通常登録</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アドレス一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=アドレスを追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外アドレス追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>田中</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>花子</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>タナカ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>ハナコ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>tanaka@testtest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>090</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>tanaka@mobiletest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>position_name</td>
+	<td>係長</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doMemo_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=アドレスを追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外アドレス追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>橋本</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>太郎</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>ハシモト</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>タロウ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>hashimoto@testtest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>02</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>2222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>2222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>090</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>2222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>2222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>hashimoto@mobiletest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>position_name</td>
+	<td>係長</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doMemo_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_4']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=グループを追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外グループ追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>group_name</td>
+	<td>テストグループ1</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=田中 花子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=田中 花子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=田中 花子</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=橋本 太郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=田中 花子</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=橋本 太郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=田中 花子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAddressbook_group_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_4']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=テストグループ1</td>
+	<td>テストグループ1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストグループ1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外グループ詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[1]/td[2]</td>
+	<td>テストグループ1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>田中花子 (未分類)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

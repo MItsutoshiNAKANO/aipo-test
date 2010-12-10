@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>company_post_register_error_format</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">company_post_register_error_format</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=会社情報管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=部署を追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>部署追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>部署追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_name</td>
+	<td>エラー_形式無視</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode1</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode2</td>
+	<td>bbbb</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone1</td>
+	<td>cc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone2</td>
+	<td>dddd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone3</td>
+	<td>eeee</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number1</td>
+	<td>fff</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number2</td>
+	<td>ggg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number3</td>
+	<td>hhhh</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccount_post_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 郵便番号 』は7桁の半角数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 電話番号（外線） 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 FAX番号 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>エラー_形式無視</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

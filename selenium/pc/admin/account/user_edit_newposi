@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ユーザ情報の編集_通常登録_新規役職</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ユーザ情報の編集_通常登録_新規役職</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ユーザー管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=営業部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=山中 はじめ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ユーザー編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password2</td>
+	<td>test01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>山川</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>りょう</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>ヤマカワ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>リョウ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>test01@test.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone1</td>
+	<td>002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone2</td>
+	<td>0002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone3</td>
+	<td>0022</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>in_telephone</td>
+	<td>0003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>0004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>0044</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>test01@testmobile.com</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>group_to</td>
+	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>position_input_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>position_input_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>position_input_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>position_name</td>
+	<td>次長</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccount_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=山川 りょう</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>test01</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>山川 りょう</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>ヤマカワ リョウ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[4]/td[2]</td>
+	<td>test01@test.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[5]/td[2]</td>
+	<td>002-0002-0022</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[6]/td[2]</td>
+	<td>0003</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[7]/td[2]</td>
+	<td>004-0004-0044</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[8]/td[2]</td>
+	<td>test01@testmobile.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[10]/td[2]</td>
+	<td>商品開発部</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[11]/td[2]</td>
+	<td>次長</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[12]/td[2]</td>
+	<td>有効</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=会社情報管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>次長</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>test01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test01</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>山川 りょう さま</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=個人設定</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザー情報を見る_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[1]/td[2]</td>
+	<td>test01</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>山川 りょう</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>ヤマカワ リョウ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>test01@test.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[5]/td[2]</td>
+	<td>002-0002-0022</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>0003</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>004-0004-0044</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]</td>
+	<td>test01@testmobile.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[10]/td[2]</td>
+	<td>商品開発部</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[11]/td[2]</td>
+	<td>次長</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=会社情報管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=係長</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>役職詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>この役職を削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=次長</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>役職詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>この役職を削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ユーザー管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=山川 りょう</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>次長</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

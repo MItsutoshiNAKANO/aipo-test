@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ロール追加_通常登録</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ロール追加_通常登録</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=アクセス権限管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ロール一覧を見る_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=アドレス帳（社内アドレス）操作</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=アドレス帳（社内アドレス）管理者</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ロール詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アクセス権限編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>member_to</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>member_to</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>member_to</td>
+	<td>label=木村 一郎</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>member_to</td>
+	<td>label=test user1</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>member_to</td>
+	<td>label=test user2</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>member_to</td>
+	<td>label=test user2</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>member_to</td>
+	<td>label=test user1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccessctl_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ロールを追加する_Button1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アクセス権限編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>acl_role_name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>feature_id</td>
+	<td>label=アドレス帳（社内アドレス）操作</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=test user1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>acllist</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>acldetail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccessctl_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ロール一覧を見る_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=アドレス帳（社内アドレス）操作</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ロール詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>アドレス帳（社内アドレス）操作</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>一覧表示</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>詳細表示</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>test user1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="category_register_alert_required">category_register_alert_required</a></td></tr>
+<tr><td><a href="category_register_alert_duplication">category_register_alert_duplication</a></td></tr>
+<tr><td><a href="category_register">category_register</a></td></tr>
+<tr><td><a href="category_edit_alert_required">category_edit_alert_required</a></td></tr>
+<tr><td><a href="category_edit_alert_duplication">category_edit_alert_duplication</a></td></tr>
+<tr><td><a href="category_edit">category_edit</a></td></tr>
+<tr><td><a href="category_delete">category_delete</a></td></tr>
+<tr><td><a href="category_multi-delete_alert">category_multi-delete_alert</a></td></tr>
+<tr><td><a href="category_multi-delete_1">category_multi-delete_1</a></td></tr>
+<tr><td><a href="category_multi-delete_2">category_multi-delete_2</a></td></tr>
+<tr><td><a href="todo_register_alert_required">todo_register_alert_required</a></td></tr>
+<tr><td><a href="todo_register_alert_duplication">todo_register_alert_duplication</a></td></tr>
+<tr><td><a href="todo_register_newcategory">todo_register_newcategory</a></td></tr>
+<tr><td><a href="todo_register_oldcategory">todo_register_oldcategory</a></td></tr>
+<tr><td><a href="todo_register_nostart">todo_register_nostart</a></td></tr>
+<tr><td><a href="todo_register_noend">todo_register_noend</a></td></tr>
+<tr><td><a href="todo_register_noperiod">todo_register_noperiod</a></td></tr>
+<tr><td><a href="todo_register_period">todo_register_period</a></td></tr>
+<tr><td><a href="todo_register_open">todo_register_open</a></td></tr>
+<tr><td><a href="todo_register_closed">todo_register_closed</a></td></tr>
+<tr><td><a href="todo_register_schedule_visible">todo_register_schedule_visible</a></td></tr>
+<tr><td><a href="todo_register_schedule_invisible">todo_register_schedule_invisible</a></td></tr>
+<tr><td><a href="todo_edit_alert_required">todo_edit_alert_required</a></td></tr>
+<tr><td><a href="todo_edit_alert_duplication">todo_edit_alert_duplication</a></td></tr>
+<tr><td><a href="todo_edit_newcategory">todo_edit_newcategory</a></td></tr>
+<tr><td><a href="todo_edit_oldcategory">todo_edit_oldcategory</a></td></tr>
+<tr><td><a href="todo_edit_nostart">todo_edit_nostart</a></td></tr>
+<tr><td><a href="todo_edit_noend">todo_edit_noend</a></td></tr>
+<tr><td><a href="todo_edit_noperiod">todo_edit_noperiod</a></td></tr>
+<tr><td><a href="todo_edit_period">todo_edit_period</a></td></tr>
+<tr><td><a href="todo_edit_open">todo_edit_open</a></td></tr>
+<tr><td><a href="todo_edit_closed">todo_edit_closed</a></td></tr>
+<tr><td><a href="todo_edit_schedule_visible">todo_edit_schedule_visible</a></td></tr>
+<tr><td><a href="todo_edit_schedule_invisible">todo_edit_schedule_invisible</a></td></tr>
+<tr><td><a href="todo_delete">todo_delete</a></td></tr>
+<tr><td><a href="todo_multi-delete_alert">todo_multi-delete_alert</a></td></tr>
+<tr><td><a href="todo_multi-delete_1">todo_multi-delete_1</a></td></tr>
+<tr><td><a href="todo_multi-delete_2">todo_multi-delete_2</a></td></tr>
+</tbody></table>
+</body>
+</html>

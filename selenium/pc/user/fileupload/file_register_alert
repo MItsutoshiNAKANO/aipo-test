@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>file_register_alert</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">file_register_alert</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=情報共有</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=共有フォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ファイル一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ファイルを追加する_Button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ファイル追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>file_title</td>
+	<td>重複</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>folder_id</td>
+	<td>label=ルートフォルダ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>ファイルを選択してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--ここから↓は手でファイル添付する-->
+<tr>
+	<td>type</td>
+	<td>attachment</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<!--ここまで↑は手でする。このしたに開始位置を指定して再度テストする-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doCabinet_file_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ファイルを追加する_Button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ファイル追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>file_title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>ファイルを選択してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--ここから↓は手でファイル添付する-->
+<tr>
+	<td>type</td>
+	<td>attachment</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<!--ここまで↑は手でする。このしたに開始位置を指定して再度テストする-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああい</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doCabinet_file_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 タイトル 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>このファイル名と同じファイルがすでに存在するため、登録できません。ファイル名を変更してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メモ 』は1000文字以下で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>file_title</td>
+	<td>ファイルエラー</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>attachments</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>attachments</td>
+	<td>label=Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='add_attachment' and @value='削除する']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doCabinet_file_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 ファイル名 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 メモ 』は1000文字以下で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>共有フォルダ一覧_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>ファイルエラー</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=重複</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>共有ファイル</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このファイルを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

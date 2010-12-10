@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>todo_edit_open</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">todo_edit_open</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>編集用</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=編集用</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>category_id</td>
+	<td>label=社外</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>todo_name</td>
+	<td>公開ToDo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>start_date_flag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>end_date_flag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[2]/input[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>state</td>
+	<td>label=60%</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>Todoを公開する</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doTodo_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>公開ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>編集用</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=公開ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[10]/td[2]</td>
+	<td>公開</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>進捗状況を見る_Button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>他のユーザーの進捗状況</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>target_user_id</td>
+	<td>label=木村 一郎</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>公開ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=公開ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>木村 一郎</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>社外</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>公開ToDo</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[4]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[5]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[6]/td[2]</td>
+	<td>60%</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[7]/td[2]</td>
+	<td>やや低い</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[10]/td[2]</td>
+	<td>Todoを公開する</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=公開ToDo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このToDoを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ToDoを追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ToDo追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>category_id</td>
+	<td>label=事務手続き</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>todo_name</td>
+	<td>編集用</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>これは編集用のToDoです。</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doTodo_insert</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>送信：通常送信（添付ファイルなし）</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">送信：通常送信（添付ファイルなし）</td></tr>
+</thead><tbody>
+<!--前提-->
+<!--・予めサンプルユーザ1で送信用、サンプルユーザ2で受信用の有効なアカウントを設定しておく-->
+<!--・デフォルトでは、各アドレスは以下のようになっている。-->
+<!--		・送信用のアドレス：★★@aimluck.com-->
+<!--		・受信用のアドレス：☆☆@aimluck.com-->
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Webメール</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メール一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=メールを作成する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メール作成</td>
+	<td></td>
+</tr>
+<!--※この下のメールアドレスは、予め受信用にアカウントを作ったユーザ（sample2）のアドレスとする-->
+<tr>
+	<td>type</td>
+	<td>to</td>
+	<td>☆☆@aimluck.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>subject</td>
+	<td>通常送信（添付ファイルなし）</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>body</td>
+	<td>ここは本文です。</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_send_mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=送信トレイ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=通常送信（添付ファイルなし）</td>
+	<td>通常送信（添付ファイルなし）</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--※この下のメールアドレスは、差出人ユーザのアドレスとする-->
+<tr>
+	<td>assertText</td>
+	<td>//td[4]</td>
+	<td>★★@aimluck.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=通常送信（添付ファイルなし）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>件名：通常送信（添付ファイルなし）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>日付：</td>
+	<td></td>
+</tr>
+<!--※この下のメールアドレスは、予め受信用にアカウントを作ったユーザ（sample2）のアドレスとする-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>宛先：☆☆@aimluck.com</td>
+	<td></td>
+</tr>
+<!--※この下の名前とメールアドレスは、差出人のメールアカウント登録時に設定した名前とメールアドレスとする-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>差出人：名前&lt;メールアドレス★★@aimluck.com&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>ここは本文です。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[3]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<!--※この下のユーザは、予め受信用にアカウントを作ったユーザのidとパスワードとする-->
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=メールを受信する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>通常送信（添付ファイルなし）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=通常送信（添付ファイルなし）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メール詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>件名：通常送信（添付ファイルなし）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>日付：</td>
+	<td></td>
+</tr>
+<!--※この下のメールアドレスは、予め受信用にアカウントを作ったユーザ（sample2）のアドレスとする-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>宛先：☆☆@aimluck.com</td>
+	<td></td>
+</tr>
+<!--※この下の名前とメールアドレスは、差出人のメールアカウント登録時に設定した名前とメールアドレスとする-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>差出人：名前&lt;メールアドレス★★@aimluck.com&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>ここは本文です。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[3]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<!--※この下のユーザは、送信したユーザ-->
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

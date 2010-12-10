@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>登録：本文あり</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">登録：本文あり</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=伝言メモ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>伝言メモ一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>メモを追加する_Button1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>伝言メモ追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='受付日']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[5]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>accept_date_hour</td>
+	<td>label=10時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>accept_date_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>dest_user_id</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>client_name</td>
+	<td>本文あり</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>company_name</td>
+	<td>テスト所属１</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>0000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email_address</td>
+	<td>test1@test.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[7]/td[2]/input[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[7]/td[2]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>custom_subject</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>custom_subject</td>
+	<td>メールにて対応願います</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>message</td>
+	<td>ここは本文を入れるところです</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doNote_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=本文あり</td>
+	<td>本文あり</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[3]</td>
+	<td>テスト所属１</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[4]</td>
+	<td>メールにて対応願います</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[5]</td>
+	<td>有</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=本文あり</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td></td>
+	<td>10時0分</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>田村 涼子</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>本文あり</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[4]/td[2]</td>
+	<td>テスト所属１</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[5]/td[2]</td>
+	<td>03-0000-1111</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[6]/td[2]</td>
+	<td>test1@test.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[7]/td[2]</td>
+	<td>-----</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[8]/td[2]</td>
+	<td>メールにて対応願います</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[9]/td[2]</td>
+	<td>ここは本文を入れるところです</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=伝言メモ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>伝言メモ一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>メモ一覧を見る_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=本文あり</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>伝言メモ詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td></td>
+	<td>10時0分</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>木村 一郎</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>本文あり</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[4]/td[2]</td>
+	<td>テスト所属１</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[5]/td[2]</td>
+	<td>03-0000-1111</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[6]/td[2]</td>
+	<td>test1@test.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[7]/td[2]</td>
+	<td>-----</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[8]/td[2]</td>
+	<td>メールにて対応願います</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[9]/td[2]</td>
+	<td>ここは本文を入れるところです</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>この伝言メモを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=伝言メモ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>伝言メモ一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=送信履歴</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=本文あり</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>伝言メモ詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>この伝言メモを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

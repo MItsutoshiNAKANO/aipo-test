@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="category_register_alert_required">category_register_alert_required</a></td></tr>
+<tr><td><a href="category_register_authority1">category_register_authority1</a></td></tr>
+<tr><td><a href="category_register_authority2">category_register_authority2</a></td></tr>
+<tr><td><a href="category_register_authority3">category_register_authority3</a></td></tr>
+<tr><td><a href="category_register_authority4">category_register_authority4</a></td></tr>
+<tr><td><a href="topic_register_alert_required">topic_register_alert_required</a></td></tr>
+<tr><td><a href="topic_register_new_category">topic_register_new_category</a></td></tr>
+<tr><td><a href="topic_register_existing_category">topic_register_existing_category</a></td></tr>
+<tr><td><a href="reply_alert_required">reply_alert_required</a></td></tr>
+<tr><td><a href="reply">reply</a></td></tr>
+<tr><td><a href="category_edit_alert_required">category_edit_alert_required</a></td></tr>
+<tr><td><a href="category_edit">category_edit</a></td></tr>
+<tr><td><a href="topic_edit_alert_required">topic_edit_alert_required</a></td></tr>
+<tr><td><a href="topic_edit_existing_category">topic_edit_existing_category</a></td></tr>
+<tr><td><a href="topic_edit_new_category">topic_edit_new_category</a></td></tr>
+</tbody></table>
+</body>
+</html>

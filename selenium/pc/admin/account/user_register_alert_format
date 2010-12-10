@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ユーザの追加_エラー_形式無視</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ユーザの追加_エラー_形式無視</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ユーザー管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザーを追加する_Button1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ユーザー追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>sample1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password2</td>
+	<td>text</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>高橋</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>ようこ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>タカハシ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>ヨウコ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>takahashi</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone1</td>
+	<td>aa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone2</td>
+	<td>bbbb</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone3</td>
+	<td>cccc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>ddd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>eeee</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>ffff</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>takahashi1</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>position_id</td>
+	<td>label=部長</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccount_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ログイン名『 sample1 』はすでに登録されています。別のログイン名で登録してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 パスワード 』と『 パスワード（確認用） 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メールアドレス 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 電話番号（外線） 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 電話番号（携帯） 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 携帯メールアドレス 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>編集：エラー（外出時間2行目）</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">編集：エラー（外出時間2行目）</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=タイムカード</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>タイムカード一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[11]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>タイムカード編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>reason</td>
+	<td>外出時間矛盾</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>plus1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>remarks</td>
+	<td>外出時間（2行目）矛盾</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>outgoing_time1_hour</td>
+	<td>label=10時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>outgoing_time1_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>comeback_time1_hour</td>
+	<td>label=11時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>comeback_time1_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>outgoing_time2_hour</td>
+	<td>label=13時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>outgoing_time2_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>comeback_time2_hour</td>
+	<td>label=12時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>comeback_time2_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_in_time_hour</td>
+	<td>label=9時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_in_time_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_out_time_hour</td>
+	<td>label=15時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>clock_out_time_minute</td>
+	<td>label=0分</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExtTimecard_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 復帰時刻 』は『 外出時刻 』以降の時刻を指定してください。（2行目）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>外出時間（2行目）矛盾</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

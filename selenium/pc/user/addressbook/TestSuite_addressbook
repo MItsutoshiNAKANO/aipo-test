@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="group_register_alert">group_register_alert</a></td></tr>
+<tr><td><a href="group_register">group_register</a></td></tr>
+<tr><td><a href="group_edit_alert">group_edit_alert</a></td></tr>
+<tr><td><a href="group_edit">group_edit</a></td></tr>
+<tr><td><a href="group_delete">group_delete</a></td></tr>
+<tr><td><a href="group_multi-delete_alert">group_multi-delete_alert</a></td></tr>
+<tr><td><a href="group_multi-delete_1">group_multi-delete_1</a></td></tr>
+<tr><td><a href="group_multi-delete_2">group_multi-delete_2</a></td></tr>
+<tr><td><a href="company_register_alert">company_register_alert</a></td></tr>
+<tr><td><a href="company_register">company_register</a></td></tr>
+<tr><td><a href="company_edit_alert">company_edit_alert</a></td></tr>
+<tr><td><a href="company_edit">company_edit</a></td></tr>
+<tr><td><a href="company_delete">company_delete</a></td></tr>
+<tr><td><a href="company_multi-delete_alert">company_multi-delete_alert</a></td></tr>
+<tr><td><a href="company_multi-delete_1">company_multi-delete_1</a></td></tr>
+<tr><td><a href="company_multi-delete_2">company_multi-delete_2</a></td></tr>
+<tr><td><a href="address_register_alert">address_register_alert</a></td></tr>
+<tr><td><a href="address_register_newcom">address_register_newcom</a></td></tr>
+<tr><td><a href="address_register_closed">address_register_closed</a></td></tr>
+<tr><td><a href="address_edit_alert">address_edit_alert</a></td></tr>
+<tr><td><a href="address_edit">address_edit</a></td></tr>
+<tr><td><a href="address_delete">address_delete</a></td></tr>
+<tr><td><a href="delete_testdata">delete_testdata</a></td></tr>
+</tbody></table>
+</body>
+</html>

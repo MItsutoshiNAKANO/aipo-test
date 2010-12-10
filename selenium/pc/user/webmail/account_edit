@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>アカウント編集：通常編集</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">アカウント編集：通常編集</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Webメール</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メール一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_7']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=test0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント設定</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>test</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>smtpserver_name</td>
+	<td>gs827.ggsv.jp</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>pop3server_name</td>
+	<td>gs827.ggsv.jp</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>pop3user_name</td>
+	<td>testtesttesttest@aimluck.com</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>pop3_password</td>
+	<td>testtesttesttest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_user_name</td>
+	<td>テストユーザー</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>testtesttesttest@aimluck.com</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>auth_send_user_id</td>
+	<td>testtesttesttest@aimluck.com</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>type</td>
+	<td>auth_send_user_password</td>
+	<td>testtesttesttestttest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>signature</td>
+	<td>ここは署名欄です</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_update_account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_7']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[1]/td[2]</td>
+	<td>test</td>
+</tr>
+<!--※以下の項目は、必要に応じて変える必要があります-->
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>gs827.ggsv.jp</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[3]/td[2]</td>
+	<td>gs827.ggsv.jp</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[4]/td[2]</td>
+	<td>testtesttesttest@aimluck.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>テストユーザー</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>testtesttesttest@aimluck.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[9]/td[2]</td>
+	<td>110</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[10]/td[2]</td>
+	<td>SMTP認証（ユーザーID：testtesttesttest@aimluck.com）</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[13]/td[2]</td>
+	<td>ここは署名欄です</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

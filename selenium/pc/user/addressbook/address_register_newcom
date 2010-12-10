@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>社外アドレス追加：通常登録（会社新規追加）</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">社外アドレス追加：通常登録（会社新規追加）</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アドレス一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_5']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>group_name</td>
+	<td>テストグループ10</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAddressbook_group_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_1']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>category_input_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>テスト1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>新規</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>テスト1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>シンキ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>test1sinki@testtest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>0003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>0033</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>040</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>0004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>0044</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>test1sinki@mobiletest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>company_name</td>
+	<td>テスト会社2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>company_name_kana</td>
+	<td>テストカイシャ2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_name</td>
+	<td>テスト部署2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_zipcode1</td>
+	<td>003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_zipcode2</td>
+	<td>0003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_address</td>
+	<td>東京都大田区山王5-0-0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_telephone1</td>
+	<td>05</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_telephone2</td>
+	<td>0005</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_telephone3</td>
+	<td>0055</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_fax_number1</td>
+	<td>06</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_fax_number2</td>
+	<td>0006</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_fax_number3</td>
+	<td>0066</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>comp_url</td>
+	<td>http://testtest111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>position_name</td>
+	<td>テスト役職1</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_group_from</td>
+	<td>label=テストグループ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doMemo_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト1 新規</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト会社2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト部署2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト役職1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テスト1 新規</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外アドレス詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>テスト1 新規</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[2]/td[2]</td>
+	<td>テスト1 シンキ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[3]/td[2]</td>
+	<td>test1sinki@testtest.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[4]/td[2]</td>
+	<td>03-0003-0033</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>040-0004-0044</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>test1sinki@mobiletest.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[1]/td[2]</td>
+	<td>テスト会社2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[2]/td[2]</td>
+	<td>テストカイシャ2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[3]/td[2]</td>
+	<td>テスト部署2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[4]/td[2]</td>
+	<td>003-0003</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[5]/td[2]</td>
+	<td>東京都大田区山王5-0-0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[6]/td[2]</td>
+	<td>05-0005-0055</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[7]/td[2]</td>
+	<td>06-0006-0066</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]/a</td>
+	<td>http://testtest111</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[9]/td[2]</td>
+	<td>テスト役職1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト会社2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト部署2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>東京都大田区山王5-0-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>05-0005-0055</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テスト会社2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>会社情報詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>テスト会社2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/form/table/tbody/tr[2]/td[2]</td>
+	<td>テストカイシャ2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/form/table/tbody/tr[3]/td[2]</td>
+	<td>テスト部署2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>003-0003</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[5]/td[2]</td>
+	<td>東京都大田区山王5-0-0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>05-0005-0055</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]</td>
+	<td>06-0006-0066</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[9]/td[2]/a</td>
+	<td>http://testtest111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_4']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストグループ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト1新規 (テスト会社2)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_4']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストグループ10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外グループ詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このグループを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

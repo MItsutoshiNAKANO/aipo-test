@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>接続設定_追加_通常</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">接続設定_追加_通常</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=メールアカウント管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>メールアカウント管理_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ここをクリックし、メールアカウントを追加してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>testaccount0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtpserver_name</td>
+	<td>testsmtp0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_user_name</td>
+	<td>testname0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>test0@test.ne.jp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>125auth_send_id0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_mailaccount_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//form/table[1]/tbody/tr[1]/td[2]</td>
+	<td>testaccount0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>testsmtp0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>testname0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>test0@test.ne.jp</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>認証なし</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>暗号化なし</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyConfirmation</td>
+	<td>このメールアカウントを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ここをクリックし、メールアカウントを追加してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>125auth_send_id1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>testaccount1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtpserver_name</td>
+	<td>testsmtp1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_user_name</td>
+	<td>testname1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>test1@test.ne.jp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3server_name</td>
+	<td>testpop31</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3user_name</td>
+	<td>testyuserid1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3_password</td>
+	<td>testpass1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_mailaccount_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>メールアカウント管理_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//form/table[1]/tbody/tr[1]/td[2]</td>
+	<td>testaccount1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>testsmtp1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>testname1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>test1@test.ne.jp</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>POP before SMTP</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>暗号化なし</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[2]/tbody/tr[1]/td[2]</td>
+	<td>testpop31</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[2]/tbody/tr[2]/td[2]</td>
+	<td>testyuserid1</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[2]/tbody/tr[5]/td[2]</td>
+	<td>暗号化なし</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyConfirmation</td>
+	<td>このメールアカウントを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ここをクリックし、メールアカウントを追加してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ここをクリックし、メールアカウントを追加してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>125auth_send_id2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>testaccount2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtpserver_name</td>
+	<td>testsmtp2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_user_name</td>
+	<td>testname2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>test2@test.ne.jp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>auth_send_user_id</td>
+	<td>testuser2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>auth_send_user_password</td>
+	<td>testpassword22</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_mailaccount_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//form/table/tbody/tr[1]/td[2]</td>
+	<td>testaccount2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>testsmtp2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>testname2</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>test2@test.ne.jp</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>SMTP認証（ユーザーID：testuser2）</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>暗号化なし</td>
+</tr>
+</tbody></table>
+</body>
+</html>

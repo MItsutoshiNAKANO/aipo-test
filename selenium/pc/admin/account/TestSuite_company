@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="company_post_register_alert_required">company_post_register_alert_required</a></td></tr>
+<tr><td><a href="company_post_register_alert_format">company_post_register_alert_format</a></td></tr>
+<tr><td><a href="company_post_register_alert_duplication">company_post_register_alert_duplication</a></td></tr>
+<tr><td><a href="company_post_register_1">company_post_register_1</a></td></tr>
+<tr><td><a href="company_post_register_2">company_post_register_2</a></td></tr>
+<tr><td><a href="company_position_register_alert_required">company_position_register_alert_required</a></td></tr>
+<tr><td><a href="company_position_register_alert_duplication">company_position_register_alert_duplication</a></td></tr>
+<tr><td><a href="company_position_register">company_position_register</a></td></tr>
+<tr><td><a href="company_post_edit_alert_required">company_post_edit_alert_required</a></td></tr>
+<tr><td><a href="company_post_edit_alert_format">company_post_edit_alert_format</a></td></tr>
+<tr><td><a href="company_post_edit_alert_duplication">company_post_edit_alert_duplication</a></td></tr>
+<tr><td><a href="company_post_edit_1">company_post_edit_1</a></td></tr>
+<tr><td><a href="company_post_edit_2">company_post_edit_2</a></td></tr>
+<tr><td><a href="company_position_edit_alert_required">company_position_edit_alert_required</a></td></tr>
+<tr><td><a href="company_position_edit_alert_duplication">company_position_edit_alert_duplication</a></td></tr>
+<tr><td><a href="company_position_edit">company_position_edit</a></td></tr>
+<tr><td><a href="company_post_delete">company_post_delete</a></td></tr>
+<tr><td><a href="company_post_multi-delete_alert">company_post_multi-delete_alert</a></td></tr>
+<tr><td><a href="company_post_multi-delete1">company_post_multi-delete1</a></td></tr>
+<tr><td><a href="company_post_multi-delete2">company_post_multi-delete2</a></td></tr>
+<tr><td><a href="company_position_delete">company_position_delete</a></td></tr>
+<tr><td><a href="company_position_multi-delete_alert">company_position_multi-delete_alert</a></td></tr>
+<tr><td><a href="company_position_multi-delete1">company_position_multi-delete1</a></td></tr>
+<tr><td><a href="company_position_multi-delete2">company_position_multi-delete2</a></td></tr>
+<tr><td><a href="company_info_edit_alert_required">company_info_edit_alert_required</a></td></tr>
+<tr><td><a href="company_info_edit_alert_format">company_info_edit_alert_format</a></td></tr>
+<tr><td><a href="company_info_edit">company_info_edit</a></td></tr>
+<tr><td><a href="company_pass_edit_alert_required">company_pass_edit_alert_required</a></td></tr>
+<tr><td><a href="company_pass_edit_alert_notequal">company_pass_edit_alert_notequal</a></td></tr>
+<tr><td><a href="company_pass_edit">company_pass_edit</a></td></tr>
+<tr><td><a href="delete_testpostandpositoin">delete_testpostandpositoin</a></td></tr>
+</tbody></table>
+</body>
+</html>

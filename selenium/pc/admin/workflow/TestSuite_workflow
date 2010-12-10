@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="class_register_alert_required">class_register_alert_required</a></td></tr>
+<tr><td><a href="class_register_alert_format">class_register_alert_format</a></td></tr>
+<tr><td><a href="class_register_alert_duplication">class_register_alert_duplication</a></td></tr>
+<tr><td><a href="class_register">class_register</a></td></tr>
+<tr><td><a href="application_register_alert_required">application_register_alert_required</a></td></tr>
+<tr><td><a href="application_register_alert_format">application_register_alert_format</a></td></tr>
+<tr><td><a href="application_register_alert_duplication">application_register_alert_duplication</a></td></tr>
+<tr><td><a href="application_register">application_register</a></td></tr>
+<tr><td><a href="class_edit_alert_required">class_edit_alert_required</a></td></tr>
+<tr><td><a href="class_edit_alert_format">class_edit_alert_format</a></td></tr>
+<tr><td><a href="class_edit_alert_duplication">class_edit_alert_duplication</a></td></tr>
+<tr><td><a href="class_edit">class_edit</a></td></tr>
+<tr><td><a href="application_edit_alert_required">application_edit_alert_required</a></td></tr>
+<tr><td><a href="application_edit_alert_format">application_edit_alert_format</a></td></tr>
+<tr><td><a href="application_edit_alert_duplication">application_edit_alert_duplication</a></td></tr>
+<tr><td><a href="application_edit">application_edit</a></td></tr>
+<tr><td><a href="class_multi-delete_alert">class_multi-delete_alert</a></td></tr>
+<tr><td><a href="class_delete">class_delete</a></td></tr>
+<tr><td><a href="class_multi-delete1">class_multi-delete1</a></td></tr>
+<tr><td><a href="class_multi-delete2">class_multi-delete2</a></td></tr>
+<tr><td><a href="application_multi-delete_alert">application_multi-delete_alert</a></td></tr>
+<tr><td><a href="application_delete">application_delete</a></td></tr>
+<tr><td><a href="application_multi-delete1">application_multi-delete1</a></td></tr>
+<tr><td><a href="application_multi-delete2">application_multi-delete2</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>user_edit</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">user_edit</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ユーザー管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=高橋 ようこ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ユーザー編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password2</td>
+	<td>test00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>高木</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>きょうこ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>タカギ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>キョウコ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>test00@test.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone1</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone2</td>
+	<td>0001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>out_telephone3</td>
+	<td>0011</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>in_telephone</td>
+	<td>0000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>0002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>0022</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>test00@testmobile.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>position_id</td>
+	<td>label=部長</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccount_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>高橋 ようこ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>高木 きょうこ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=高木 きょうこ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>test00</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>高木 きょうこ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>タカギ キョウコ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[4]/td[2]</td>
+	<td>test00@test.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[5]/td[2]</td>
+	<td>001-0001-0011</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[6]/td[2]</td>
+	<td>0000</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[7]/td[2]</td>
+	<td>002-0002-0022</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[8]/td[2]</td>
+	<td>test00@testmobile.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[10]/td[2]</td>
+	<td>商品開発部</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[11]/td[2]</td>
+	<td>部長</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[12]/td[2]</td>
+	<td>有効</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>test00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>test00</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>高木 きょうこ さま</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=個人設定</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザー情報を見る_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[1]/td[2]</td>
+	<td>test00</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[2]/td[2]</td>
+	<td>高木 きょうこ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>タカギ キョウコ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>test00@test.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[5]/td[2]</td>
+	<td>001-0001-0011</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>0000</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>002-0002-0022</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]</td>
+	<td>test00@testmobile.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[10]/td[2]</td>
+	<td>商品開発部</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[11]/td[2]</td>
+	<td>部長</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>company_post_register_error_duplication</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">company_post_register_error_duplication</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=会社情報管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=部署を追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>部署追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>部署追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_name</td>
+	<td>商品開発部A</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode1</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode2</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>address</td>
+	<td>東京都港区台場1-1-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone1</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone2</td>
+	<td>3333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone3</td>
+	<td>3333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_in_telephone</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number1</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number2</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number3</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccount_post_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=部署を追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>部署追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>部署追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_name</td>
+	<td>商品開発部A</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode1</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode2</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>address</td>
+	<td>東京都港区台場1-1-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone1</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone2</td>
+	<td>3333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_out_telephone3</td>
+	<td>3333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_in_telephone</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number1</td>
+	<td>03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number2</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number3</td>
+	<td>1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAccount_post_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>部署名『 商品開発部A 』は既に登録されています。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=商品開発部A</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

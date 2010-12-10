@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="aipo/" />
+<title>登録：通常登録</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">登録：通常登録</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ワークフロー</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>依頼を追加する_Button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>category_id</td>
+	<td>label=有給休暇届</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>request_name</td>
+	<td>通常登録</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[2]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>workflow_Note</td>
+	<td>申請内容を書きます。</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>price</td>
+	<td>3000</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>tmp_member_from</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<!--ここからはファイルのアップロードなので手作業になります。-->
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>添付ファイルの選択</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>ファイルを選択してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>attachment</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<!--以上、手作業-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>attachments</td>
+	<td>label=Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='add_attachment' and @value='削除する']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--ここからはファイルのアップロードなので手作業になります。-->
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>attachment</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<!--以上、手作業-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//select[@id='attachments']/option</td>
+	<td>Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWorkflow_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>全依頼を見る_Button3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[3]/span</td>
+	<td>決裁待ち</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=【有給休暇届】通常登録</td>
+	<td>【有給休暇届】通常登録</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[5]</td>
+	<td>3,000 円</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=完了</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div</td>
+	<td>指定された条件に該当する依頼はありません。</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=未完了</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=【有給休暇届】通常登録</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/span</td>
+	<td>決裁待ち</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[1]/table/tbody/tr[2]/td[2]</td>
+	<td>有給休暇届 <br /> 通常登録</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>やや高い</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[5]/td[2]</td>
+	<td>申請内容を書きます。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>3,000 円</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Winter.jpg</td>
+	<td>Winter.jpg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[1]</td>
+	<td>ワークフロー詳細</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://59.106.173.26:8080/aipo/portal/" />
+<title>schedule_validator_date</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">schedule_validator_date</td></tr>
+</thead><tbody>
+<!--sample1でログインした状態から始める-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=[1] ｽｹｼﾞｭｰﾙ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=登録(1日)へ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ｽｹｼﾞｭｰﾙ(1日)登録</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_time</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>end_date_time</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doSchedule_form_note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『日付』で入力された年月日は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『時間』で入力された時間は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_date</td>
+	<td>00000000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_time</td>
+	<td>2500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>end_date_time</td>
+	<td>2500</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doSchedule_form_note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『日付』で入力された年月日は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『時間』で入力された時間は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_date</td>
+	<td>あいうえお</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_time</td>
+	<td>あいうえ</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>end_date_time</td>
+	<td>あいうえ</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doSchedule_form_note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『日付』で入力された年月日は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『時間』で入力された時間は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_time</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>end_date_time</td>
+	<td>0959</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doSchedule_form_note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『時間』は15分単位で指定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 終了日時 』は『 開始日時 』以降の日付を指定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_date</td>
+	<td>123456789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>start_date_time</td>
+	<td>0955</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>end_date_time</td>
+	<td>0959</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>eventSubmit_doSchedule_form_note</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『時間』は15分単位で指定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『日付』で入力された年月日は存在しません</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ｽｹｼﾞｭｰﾙへ</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

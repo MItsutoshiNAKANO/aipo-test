@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="folder_register_alert">folder_register_alert</a></td></tr>
+<tr><td><a href="folder_register">folder_register</a></td></tr>
+<tr><td><a href="folder_edit_alert">folder_edit_alert</a></td></tr>
+<tr><td><a href="folder_edit">folder_edit</a></td></tr>
+<tr><td><a href="folder_delete">folder_delete</a></td></tr>
+<tr><td><a href="file_register_alert">file_register_alert</a></td></tr>
+<tr><td><a href="file_register">file_register</a></td></tr>
+<tr><td><a href="file_edit_alert">file_edit_alert</a></td></tr>
+<tr><td><a href="file_edit">file_edit</a></td></tr>
+<tr><td><a href="file_delete">file_delete</a></td></tr>
+<tr><td><a href="file_multi-delete_alert">file_multi-delete_alert</a></td></tr>
+<tr><td><a href="file_multi-delete_1">file_multi-delete_1</a></td></tr>
+<tr><td><a href="file_multi-delete_2">file_multi-delete_2</a></td></tr>
+</tbody></table>
+</body>
+</html>

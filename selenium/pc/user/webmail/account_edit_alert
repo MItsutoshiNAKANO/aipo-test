@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>アカウント編集：エラー</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">アカウント編集：エラー</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Webメール</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メール一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_7']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=test0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント設定</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>account_name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtpserver_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3server_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3user_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_user_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtp_port</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3_port</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>auth_send_user_id</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>auth_send_user_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_update_account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 送信メールサーバ名（SMTP） 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信メールサーバ名（POP3） 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信用ユーザーID 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信用ユーザーパスワード 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 名前 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メールアドレス 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 SMTP認証用ユーザーID 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 SMTP認証用パスワード 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mail_address</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>smtp_port</td>
+	<td>ssss</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>pop3_port</td>
+	<td>ssss</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doWebmail_update_account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 メールアドレス 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 送信ポート番号（SMTP） 』に正しい数値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 受信ポート番号（POP3） 』に正しい数値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_2']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_7']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=test0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント詳細</td>
+	<td></td>
+</tr>
+<!--※以下の項目は、上で入力した内容と同じ内容を入力します-->
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>gs827.ggsv.jp0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[3]/td[2]</td>
+	<td>gs827.ggsv.jp0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[4]/td[2]</td>
+	<td>testtesttesttest0@aimluck.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[6]/td[2]</td>
+	<td>テストユーザー0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>testtesttesttest0@aimluck.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[10]/td[2]</td>
+	<td>SMTP認証（ユーザーID：testtesttesttest0@aimluck.com）</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[13]/td[2]</td>
+	<td>ここは署名欄です0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

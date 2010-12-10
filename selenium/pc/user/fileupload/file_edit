@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ファイルの編集：通常編集</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ファイルの編集：通常編集</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=情報共有</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=共有フォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ファイル一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>共有フォルダ一覧_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>sword</td>
+	<td>テストファイル</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストファイル</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>共有ファイル</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>ファイル編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>file_title</td>
+	<td>てすとふぁいる</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>attachments</td>
+	<td>label=Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='add_attachment' and @value='削除する']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<!--ここから↓は手でファイル添付する-->
+<tr>
+	<td>type</td>
+	<td>attachment</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<!--ここまで↑は手でする。このしたに開始位置を指定して再度テストする-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>ファイルを編集した</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>folder_id</td>
+	<td>label=ルートフォルダ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doCabinet_file_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>共有フォルダ一覧_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>sword</td>
+	<td>テストファイル</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>指定された条件に該当するファイルはありません。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>共有フォルダ一覧_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>sword</td>
+	<td>てすとふぁいる</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[6]</td>
+	<td>テストフォルダ1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=てすとふぁいる</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>共有ファイル</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/form/table/tbody/tr[1]/td[2]</td>
+	<td>てすとふぁいる</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/form/table/tbody/tr[2]/td[2]/a</td>
+	<td>Sunset.jpg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>ルートフォルダ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]</td>
+	<td>ファイルを編集した</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このファイルを削除してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>共有フォルダ一覧_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストフォルダ1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テストフォルダ1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>共有フォルダ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このフォルダを削除してよろしいですか？なお、フォルダに含まれるファイルやフォルダはすべて削除されます。</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

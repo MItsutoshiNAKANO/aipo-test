@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="register_portlet">register_portlet</a></td></tr>
+<tr><td><a href="check_config">check_config</a></td></tr>
+<tr><td><a href="register_alert_required">register_alert_required</a></td></tr>
+<tr><td><a href="register_alert_nospecify">register_alert_nospecify</a></td></tr>
+<tr><td><a href="register_alert_period">register_alert_period</a></td></tr>
+<tr><td><a href="register_one">register_one</a></td></tr>
+<tr><td><a href="register_many">register_many</a></td></tr>
+<tr><td><a href="register_facility">register_facility</a></td></tr>
+<tr><td><a href="register_period">register_period</a></td></tr>
+<tr><td><a href="register_repetition_day_period">register_repetition_day_period</a></td></tr>
+<tr><td><a href="register_repetition_day_noperiod">register_repetition_day_noperiod</a></td></tr>
+<tr><td><a href="register_repetition_week_period">register_repetition_week_period</a></td></tr>
+<tr><td><a href="register_repetition_week_noperiod">register_repetition_week_noperiod</a></td></tr>
+<tr><td><a href="register_repetition_month_period">register_repetition_month_period</a></td></tr>
+<tr><td><a href="register_repetition_month_noperiod">register_repetition_month_noperiod</a></td></tr>
+<tr><td><a href="register_open">register_open</a></td></tr>
+<tr><td><a href="delete_portlet">delete_portlet</a></td></tr>
+</tbody></table>
+</body>
+</html>

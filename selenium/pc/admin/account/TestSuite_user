@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="user_register_alert_required">user_register_alert_required</a></td></tr>
+<tr><td><a href="user_register_alert_format">user_register_alert_format</a></td></tr>
+<tr><td><a href="user_register">user_register</a></td></tr>
+<tr><td><a href="user_register_newposi">user_register_newposi</a></td></tr>
+<tr><td><a href="user_register_file">user_register_file</a></td></tr>
+<tr><td><a href="user_edit_alert_required">user_edit_alert_required</a></td></tr>
+<tr><td><a href="user_edit_alert_format">user_edit_alert_format</a></td></tr>
+<tr><td><a href="user_edit">user_edit</a></td></tr>
+<tr><td><a href="user_edit_newposi">user_edit_newposi</a></td></tr>
+<tr><td><a href="user_edit_file">user_edit_file</a></td></tr>
+<tr><td><a href="user_notavailable">user_notavailable</a></td></tr>
+<tr><td><a href="user_multi-notavailable_alert">user_multi-notavailable_alert</a></td></tr>
+<tr><td><a href="user_multi-notavailable1">user_multi-notavailable1</a></td></tr>
+<tr><td><a href="user_multi-notavailable2">user_multi-notavailable2</a></td></tr>
+<tr><td><a href="user_available">user_available</a></td></tr>
+<tr><td><a href="user_multi-available_alert">user_multi-available_alert</a></td></tr>
+<tr><td><a href="user_multi-available1">user_multi-available1</a></td></tr>
+<tr><td><a href="user_multi-available2">user_multi-available2</a></td></tr>
+<tr><td><a href="user_delete">user_delete</a></td></tr>
+<tr><td><a href="user_multi-delete_alert">user_multi-delete_alert</a></td></tr>
+<tr><td><a href="user_multi-delete1">user_multi-delete1</a></td></tr>
+<tr><td><a href="user_multi-delete2">user_multi-delete2</a></td></tr>
+<tr><td><a href="delete_testuser">delete_testuser</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>会社情報追加：エラー</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">会社情報追加：エラー</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アドレス一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=会社情報を追加する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>会社情報追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_name</td>
+	<td>エラー</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode1</td>
+	<td>aaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode2</td>
+	<td>aaaa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>address</td>
+	<td>東京都文京区大塚2-0-0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>aa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>bbbb</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>cccc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number1</td>
+	<td>dd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number2</td>
+	<td>eeee</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>fax_number3</td>
+	<td>ffff</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>url</td>
+	<td>test.jp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doAddressbook_company_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 会社名 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 会社名（フリガナ） 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 郵便番号 』は7桁の半角数字で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 電話番号 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 FAX番号 』を正しく入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_1']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>エラー</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

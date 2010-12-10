@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="theme_register_alert">theme_register_alert</a></td></tr>
+<tr><td><a href="theme_register">theme_register</a></td></tr>
+<tr><td><a href="article_register_alert">article_register_alert</a></td></tr>
+<tr><td><a href="article_register_new_theme">article_register_new_theme</a></td></tr>
+<tr><td><a href="article_register_existing_theme">article_register_existing_theme</a></td></tr>
+<tr><td><a href="article_register_file">article_register_file</a></td></tr>
+<tr><td><a href="theme_edit_alert">theme_edit_alert</a></td></tr>
+<tr><td><a href="theme_edit">theme_edit</a></td></tr>
+<tr><td><a href="article_edit_alert">article_edit_alert</a></td></tr>
+<tr><td><a href="article_edit">article_edit</a></td></tr>
+<tr><td><a href="comment_alert">comment_alert</a></td></tr>
+<tr><td><a href="comment_register">comment_register</a></td></tr>
+<tr><td><a href="comment_delete">comment_delete</a></td></tr>
+<tr><td><a href="theme_delete">theme_delete</a></td></tr>
+<tr><td><a href="theme_multi-delete_alert">theme_multi-delete_alert</a></td></tr>
+<tr><td><a href="theme_multi-delete_1">theme_multi-delete_1</a></td></tr>
+<tr><td><a href="theme_multi-delete_2">theme_multi-delete_2</a></td></tr>
+<tr><td><a href="article_delete">article_delete</a></td></tr>
+</tbody></table>
+</body>
+</html>

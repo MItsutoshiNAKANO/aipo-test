@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>register_error_format</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">register_error_format</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=タイムカード管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>勤務形態を追加する_Button2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>system_name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>start_hour</td>
+	<td>label=15時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>start_minute</td>
+	<td>label=35分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>end_hour</td>
+	<td>label=15時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>end_minute</td>
+	<td>label=30分</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_in</td>
+	<td>-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_in</td>
+	<td>-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_out</td>
+	<td>-1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_out</td>
+	<td>-1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>outgoing_add_flag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExttimecard_system_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 日付切替時刻 』は『 勤務時間 』の範囲外の時刻を指定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間内の勤務時間 』には0以上の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間内の休憩時間 』には0以上の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間外の勤務時間 』には0以上の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間外の休憩時間 』には0以上の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_in</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_in</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_out</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_out</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExttimecard_system_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間内の勤務時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間内の休憩時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間外の勤務時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間外の休憩時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_in</td>
+	<td>481</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_in</td>
+	<td>481</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_out</td>
+	<td>481</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_out</td>
+	<td>481</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExttimecard_system_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間内の勤務時間 』には480以下の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間内の休憩時間 』には480以下の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間外の勤務時間 』には480以下の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 勤務時間外の休憩時間 』には480以下の値を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_in</td>
+	<td>480</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_in</td>
+	<td>480</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_out</td>
+	<td>480</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_out</td>
+	<td>480</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExttimecard_system_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間内の勤務時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間内の休憩時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間外の勤務時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>『 勤務時間外の休憩時間 』には</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>start_hour</td>
+	<td>label=4時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>end_hour</td>
+	<td>label=14時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>change_hour</td>
+	<td>label=10時</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExttimecard_system_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 日付切替時刻 』は『 勤務時間 』の範囲外の時刻を指定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>勤務形態一覧を見る_Button1</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

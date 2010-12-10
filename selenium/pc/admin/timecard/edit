@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>edit</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">edit</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=システム管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=タイムカード管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>勤務形態一覧を見る_Button1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[3]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>system_name</td>
+	<td>勤務形態B</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>start_hour</td>
+	<td>label=9時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>start_minute</td>
+	<td>label=45分</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>end_hour</td>
+	<td>label=18時</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>end_minute</td>
+	<td>label=35分</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_in</td>
+	<td>420</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_in</td>
+	<td>55</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>worktime_out</td>
+	<td>180</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>resttime_out</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>change_hour</td>
+	<td>label=8時</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>outgoing_add_flag</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doExttimecard_system_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>勤務形態一覧を見る_Button1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>勤務形態A</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>勤務形態B</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ユーザー一覧を見る_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/select/option[2]</td>
+	<td>勤務形態B</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>switchCheckbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>system_id</td>
+	<td>label=勤務形態B</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonCheckboxAction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=勤務形態B</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>勤務形態B</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[2]/td[2]</td>
+	<td>9時45分 ～ 18時35分</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[3]/td[2]</td>
+	<td>勤務時間内の場合420分の勤務に対して、休憩時間は55分<br /> 勤務時間外の場合180分の勤務に対して、休憩 時間は3分</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]/div</td>
+	<td>8時を過ぎると次の日のタイムカードに切り替えます。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[5]/td[2]</td>
+	<td>外出を勤怠時間に含める</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>switchCheckbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonCheckboxAction</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

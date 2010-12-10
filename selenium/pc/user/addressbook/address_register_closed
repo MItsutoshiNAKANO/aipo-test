@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>社外アドレス追加：通常登録（会社既存）</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">社外アドレス追加：通常登録（会社既存）</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アドレス一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_1']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>category_input_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>category_input_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>テスト2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>既存</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name_kana</td>
+	<td>テスト2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name_kana</td>
+	<td>キゾン</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>test2kizon@testtest.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone1</td>
+	<td>07</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone2</td>
+	<td>0007</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telephone3</td>
+	<td>0077</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone1</td>
+	<td>080</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone2</td>
+	<td>0008</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_phone3</td>
+	<td>0088</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellular_mail</td>
+	<td>test2kizon@mobiletest.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>company_id</td>
+	<td>label=テスト会社 テスト部署</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>position_name</td>
+	<td>テスト役職2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[9]/td[2]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doMemo_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト2 既存</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=テスト会社</td>
+	<td>テスト会社</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト部署</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>テスト役職2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=テスト2 既存</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>社外アドレス詳細</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr[1]/td[2]</td>
+	<td>テスト2 既存</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[2]/td[2]</td>
+	<td>テスト2 キゾン</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[3]/td[2]</td>
+	<td>test2kizon@testtest.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[4]/td[2]</td>
+	<td>07-0007-0077</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[6]/td[2]</td>
+	<td>080-0008-0088</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[7]/td[2]</td>
+	<td>test2kizon@mobiletest.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[1]/td[2]</td>
+	<td>テスト会社</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[2]/td[2]</td>
+	<td>テストカイシャ</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[3]/td[2]</td>
+	<td>テスト部署</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[4]/td[2]</td>
+	<td>100-1000</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[5]/td[2]</td>
+	<td>東京都練馬区大泉学園町2-0-0</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[6]/td[2]</td>
+	<td>01-0001-0011</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//td[2]/table/tbody/tr[7]/td[2]</td>
+	<td>02-0002-0022</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[8]/td[2]/a</td>
+	<td>http://testtest</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[9]/td[2]</td>
+	<td>テスト役職2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>テスト2 既存</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>member_username</td>
+	<td>sample1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>login_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=アドレス帳</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>アドレス一覧</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

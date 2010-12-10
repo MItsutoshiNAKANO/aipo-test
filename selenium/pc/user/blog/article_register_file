@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>article_register_file</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">article_register_file</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=情報共有</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ブログ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=記事を書く</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>thema_id</td>
+	<td>label=ニュース</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>ファイルの選択</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>note</td>
+	<td>記事ですよ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>添付ファイルの選択</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>ファイルを選択してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<!--seleniumでファイルのアップロードが出来ないので、ここからは手作業になります。-->
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>attachment</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Winter.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>attachments</td>
+	<td>label=Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='add_attachment' and @value='削除する']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>attachments</td>
+	<td>label=</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[4]/td[2]/select/option</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>add_attachment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>attachment_window</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=attachment_window</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//span/input</td>
+	<td>C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doFileupload_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>attachments</td>
+	<td>label=Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>eventSubmit_doBlog_entry_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Winter.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=ファイルの選択</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//th</td>
+	<td>日記</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[1]/h3</td>
+	<td>ファイルの選択</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[1]/table/tbody/tr[2]/td/div[2]</td>
+	<td>記事ですよ&nbsp;&nbsp;&nbsp;Winter.jpg <br /> <br /> <br />&nbsp;&nbsp;（マウスのクリックで画像を拡大縮小できます）</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Winter.jpg</td>
+	<td>Winter.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonClose</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
