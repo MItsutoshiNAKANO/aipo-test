@@ -9,7 +9,20 @@
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="register_portlet">register_portlet</a></td></tr>
-<tr><td><a href="check_config">check_config</a></td></tr>
+<tr><td><a href="makepage">makepage</a></td></tr>
+<tr><td><a href="portlet_name">portlet_name</a></td></tr>
+<tr><td><a href="portlet_default">portlet_default</a></td></tr>
+<tr><td><a href="portlet_start_and_end_time">portlet_start_and_end_time</a></td></tr>
+<tr><td><a href="portlet_group">portlet_group</a></td></tr>
+<tr><td><a href="portlet_user">portlet_user</a></td></tr>
+<tr><td><a href="portlet_todo">portlet_todo</a></td></tr>
+<tr><td><a href="portlet_config">portlet_config</a></td></tr>
+<tr><td><a href="portlet_my_oneday">portlet_my_day</a></td></tr>
+<tr><td><a href="portlet_my_week">portlet_my_week</a></td></tr>
+<tr><td><a href="portlet_my_month">portlet_my_month</a></td></tr>
+<tr><td><a href="portlet_group_day">portlet_group_day</a></td></tr>
+<tr><td><a href="portlet_group_month">portlet_group_month</a></td></tr>
+<tr><td><a href="pagedelete">pagedelete</a></td></tr>
 <tr><td><a href="register_alert_required">register_alert_required</a></td></tr>
 <tr><td><a href="register_alert_nospecify">register_alert_nospecify</a></td></tr>
 <tr><td><a href="register_alert_period">register_alert_period</a></td></tr>

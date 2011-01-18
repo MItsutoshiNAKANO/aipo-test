@@ -27,6 +27,21 @@
 	<td></td>
 </tr>
 <tr>
+	<td>clickAndWait</td>
+	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=（全体）</td>
+</tr>
+<tr>
 	<td>pause</td>
 	<td>1000</td>
 	<td></td>
@@ -49,11 +64,6 @@
 <tr>
 	<td>assertConfirmation</td>
 	<td>このユーザーを削除してよろしいですか？</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>

@@ -82,8 +82,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -116,7 +116,6 @@
 	<td>00000削除用２</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>申請経路を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,11 +52,6 @@
 	<td>00000削除2</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>addSelection</td>
 	<td>tmp_member_from</td>
 	<td>label=木村 一郎</td>
@@ -72,8 +67,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>申請経路追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -82,18 +77,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//td[1]/input</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -108,7 +93,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -116,7 +101,6 @@
 	<td>00000削除2</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

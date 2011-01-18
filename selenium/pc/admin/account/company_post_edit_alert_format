@@ -77,8 +77,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -117,8 +117,8 @@
 	<td>cccc</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -162,8 +162,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -187,8 +187,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -197,8 +197,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>部署詳細</td>
 	<td></td>
 </tr>
 <tr>

@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>勤務形態追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -67,12 +67,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 勤務形態 』を入力してください。</td>
 	<td></td>
 </tr>
@@ -96,17 +91,6 @@
 	<td>『 勤務時間外の休憩時間 』を入力してください。</td>
 	<td></td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>ajaxbuttonClose</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>勤務形態一覧を見る_Button1</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>

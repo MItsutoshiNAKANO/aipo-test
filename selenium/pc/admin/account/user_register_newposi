@@ -117,9 +117,19 @@
 	<td>test01@testmobile0.com</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>addSelection</td>
 	<td>tmp_group_from</td>
 	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>addSelection</td>
@@ -127,9 +137,19 @@
 	<td>label=営業部</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>removeSelection</td>
 	<td>tmp_group_from</td>
 	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -162,12 +182,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー一覧</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>ユーザー一覧を表示する_Button0</td>
 	<td></td>
 </tr>
@@ -222,8 +242,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -287,8 +307,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー一覧</td>
 	<td></td>
 </tr>
 <tr>
@@ -307,8 +327,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>役職一覧</td>
 	<td></td>
 </tr>
 <tr>
@@ -322,8 +342,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>役職詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -337,18 +357,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>役職一覧</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -362,18 +377,8 @@
 	<td>test011</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>login_submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -387,13 +392,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>ユーザー情報を見る_Button0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -452,11 +452,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>member_username</td>
 	<td>admin</td>
@@ -467,18 +462,13 @@
 	<td>admin</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>login_submit</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>システム管理</td>
 	<td></td>
 </tr>
 

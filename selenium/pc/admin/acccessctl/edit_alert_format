@@ -72,12 +72,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 メモ 』は1000文字以下で入力してください。</td>
 	<td></td>
 </tr>
@@ -87,7 +82,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>ロール一覧を見る_Button0</td>
 	<td></td>
 </tr>

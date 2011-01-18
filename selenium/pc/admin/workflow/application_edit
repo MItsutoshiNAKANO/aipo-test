@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>ワークフロー申請経路</td>
 	<td></td>
 </tr>
 <tr>
@@ -73,17 +73,12 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>eventSubmit_doWorkflow_route_update</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -97,23 +92,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>test3ああああああああああああ</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
 	<td>ああああああああああああああああああ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -142,11 +127,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>ajaxbuttonDelete</td>
 	<td></td>
@@ -156,7 +136,6 @@
 	<td>このカテゴリを削除してよろしいですか？</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

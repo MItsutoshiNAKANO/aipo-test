@@ -117,13 +117,28 @@
 	<td>test00@testmobile0.com</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>addSelection</td>
 	<td>tmp_group_from</td>
 	<td>label=商品開発部</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -132,8 +147,18 @@
 	<td>label=営業部</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>button_group_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -142,8 +167,18 @@
 	<td>label=商品開発部</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>button_group_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,13 +197,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー一覧</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>ユーザー一覧を表示する_Button0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -217,8 +257,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -282,8 +322,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー一覧</td>
 	<td></td>
 </tr>
 <tr>
@@ -307,11 +347,6 @@
 	<td>test000</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>login_submit</td>
 	<td></td>
@@ -327,18 +362,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>link=個人設定</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>ユーザー情報を見る_Button0</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー情報を見る</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>clickAndWait</td>
+	<td>ユーザー情報を見る_Button0</td>
 	<td></td>
 </tr>
 <tr>
@@ -412,18 +447,13 @@
 	<td>admin</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>login_submit</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>システム管理</td>
 	<td></td>
 </tr>
 

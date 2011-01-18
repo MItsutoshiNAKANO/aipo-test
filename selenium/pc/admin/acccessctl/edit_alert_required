@@ -62,13 +62,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>type</td>
+	<td>acl_role_name</td>
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>acl_role_name</td>
+	<td>setSpeed</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,17 +87,17 @@
 	<td></td>
 </tr>
 <tr>
+	<td>setSpeed</td>
+	<td>0</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>eventSubmit_doAccessctl_update</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 ロール名 』を入力してください。</td>
 	<td></td>
 </tr>

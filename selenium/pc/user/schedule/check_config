@@ -11,333 +11,6 @@
 <thead>
 <tr><td rowspan="1" colspan="3">check_config</td></tr>
 </thead><tbody>
-<tr>
-	<td>open</td>
-	<td>/aipo/portal/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=マイページ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='roundWrapper']/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/a/img</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>current_title</td>
-	<td>sampleスケジュール</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>eventSubmit_doUpdate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>sampleスケジュール</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=sampleスケジュール</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=トップ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='roundWrapper']/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/a/img</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>current_title</td>
-	<td>スケジュール</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>eventSubmit_doUpdate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=スケジュール</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=マイページ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>スケジュール</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//div[@id='roundWrapper']/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/a/img</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>eventSubmit_doDefault</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<!--デフォルトの確認-->
-<tr>
-	<td>assertValue</td>
-	<td>current_title</td>
-	<td>スケジュール</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p1a-rows</td>
-	<td>9</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p1b-rows</td>
-	<td>22</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p3a-group</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p3a-user</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p3b-group</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p5a-view</td>
-	<td>1</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p6a-tab</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p7a-tab</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p8a-tab</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p9a-tab</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>paa-tab</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>pba-template</td>
-	<td>schedule-oneday</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>eventSubmit_doUpdate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<!--表示開始時間、表示終了時間の確認-->
-<tr>
-	<td>clickAndWait</td>
-	<td>//div[@id='roundWrapper']/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/a/img</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>p1a-rows</td>
-	<td>label=0時</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>p1b-rows</td>
-	<td>label=24時</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>eventSubmit_doUpdate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>23</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//div[@id='roundWrapper']/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/a/img</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p1a-rows</td>
-	<td>0</td>
-</tr>
-<tr>
-	<td>assertValue</td>
-	<td>p1b-rows</td>
-	<td>24</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>p1a-rows</td>
-	<td>label=10時</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>p1b-rows</td>
-	<td>label=14時</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>eventSubmit_doUpdate</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=スケジュール</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>13</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextNotPresent</td>
-	<td>14</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=トップ</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
 <!--初期選択グループの確認-->
 <tr>
 	<td>clickAndWait</td>
@@ -422,7 +95,7 @@
 <!--初期選択ユーザー/施設の確認-->
 <tr>
 	<td>clickAndWait</td>
-	<td>link=マイページ</td>
+	<td>link=テストポートレット。</td>
 	<td></td>
 </tr>
 <tr>
@@ -615,7 +288,7 @@
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>スケジュール用テストデータです。 </td>
+	<td>スケジュール用テストデータです。</td>
 	<td></td>
 </tr>
 <tr>
@@ -665,12 +338,12 @@
 </tr>
 <tr>
 	<td>assertTextNotPresent</td>
-	<td>スケジュール用テストデータです。 </td>
+	<td>スケジュール用テストデータです。</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=トップ</td>
+	<td>link=テストポートレット。</td>
 	<td></td>
 </tr>
 <tr>
@@ -715,7 +388,7 @@
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>スケジュール用テストデータです。 </td>
+	<td>スケジュール用テストデータです。</td>
 	<td></td>
 </tr>
 <tr>

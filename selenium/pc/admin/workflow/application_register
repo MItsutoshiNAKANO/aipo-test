@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">application_register</td></tr>
 </thead><tbody>
 <tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/aipo/portal/</td>
 	<td></td>
@@ -27,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>申請経路を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -45,11 +50,6 @@
 	<td>type</td>
 	<td>route_name</td>
 	<td>test3</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
 </tr>
 <tr>
 	<td>addSelection</td>
@@ -83,7 +83,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>test3</td>
 	<td></td>
 </tr>

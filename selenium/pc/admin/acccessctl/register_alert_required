@@ -37,12 +37,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 ロール名 』を入力してください。</td>
 	<td></td>
 </tr>

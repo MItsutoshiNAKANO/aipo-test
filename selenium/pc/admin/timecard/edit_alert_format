@@ -37,8 +37,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>勤務形態編集</td>
 	<td></td>
 </tr>
 <tr>
@@ -97,12 +97,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 日付切替時刻 』は『 勤務時間 』の範囲外の時刻を指定してください。</td>
 	<td></td>
 </tr>
@@ -152,12 +147,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextNotPresent</td>
+	<td>waitForTextNotPresent</td>
 	<td>『 勤務時間内の勤務時間 』には</td>
 	<td></td>
 </tr>
@@ -202,12 +192,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 勤務時間内の勤務時間 』には480以下の値を入力してください。</td>
 	<td></td>
 </tr>
@@ -252,12 +237,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextNotPresent</td>
+	<td>waitForTextNotPresent</td>
 	<td>『 勤務時間内の勤務時間 』には</td>
 	<td></td>
 </tr>
@@ -297,12 +277,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 日付切替時刻 』は『 勤務時間 』の範囲外の時刻を指定してください。</td>
 	<td></td>
 </tr>
@@ -312,18 +287,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>勤務形態編集</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>勤務形態一覧を見る_Button1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -332,13 +302,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>ユーザー一覧を見る_Button0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -358,27 +323,12 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>10</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=勤務形態A</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=勤務形態A</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -421,7 +371,6 @@
 	<td>ajaxbuttonCheckboxAction</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

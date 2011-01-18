@@ -22,17 +22,12 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>//table[@id='aimluck_widget_ComboButton_0']/tbody/tr/td[2]/div</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
 	<td></td>
 </tr>
@@ -47,8 +42,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>部署詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -72,8 +67,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>部署詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -112,8 +107,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>役職詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -126,7 +121,6 @@
 	<td>この役職を削除してよろしいですか？</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

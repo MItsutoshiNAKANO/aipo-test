@@ -27,18 +27,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=木村 一郎</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -49,11 +44,6 @@
 <tr>
 	<td>assertConfirmation</td>
 	<td>このユーザーを無効化してよろしいですか？</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -69,7 +59,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//tr[3]/td[2]</td>
-	<td>無効</td>
+	<td>有効</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -97,8 +87,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -127,13 +117,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -147,18 +132,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>assertTextPresent</td>
 	<td>このユーザーは現在無効化されています。担当者様にご確認ください。 ユーザー名 パスワード ユーザー一覧から選択する パスワードを保存する</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -172,18 +147,8 @@
 	<td>admin</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>login_submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 

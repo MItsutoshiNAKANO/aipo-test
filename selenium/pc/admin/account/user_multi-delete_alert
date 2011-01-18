@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>ユーザの削除_エラー</title>
+<title>user_multi-delete_alert</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">ユーザの削除_エラー</td></tr>
+<tr><td rowspan="1" colspan="3">user_multi-delete_alert</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -32,11 +32,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>select</td>
 	<td>//select</td>
 	<td>label=（全体）</td>
@@ -56,6 +51,7 @@
 	<td>チェックボックスを１つ以上選択してください。</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

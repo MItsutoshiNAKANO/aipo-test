@@ -22,13 +22,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>link=システム情報</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>社内からのアクセス</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -67,18 +67,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForText</td>
 	<td>//form/table/tbody/tr[1]/td[2]</td>
 	<td>exact:http://59.106.173.2/aipo/</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>click</td>
+	<td>ajaxbuttonEdit</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>ajaxbuttonEdit</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>

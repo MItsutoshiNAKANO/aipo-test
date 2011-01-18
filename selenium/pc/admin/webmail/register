@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>接続設定_追加_通常</title>
+<title>register</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">接続設定_追加_通常</td></tr>
+<tr><td rowspan="1" colspan="3">register</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -32,13 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>メールアカウント管理_Button0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ここをクリックし、メールアカウントを追加してください。</td>
 	<td></td>
 </tr>
 <tr>
@@ -192,6 +187,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForText</td>
 	<td>//form/table[1]/tbody/tr[1]/td[2]</td>
 	<td>testaccount1</td>
@@ -244,11 +244,6 @@
 <tr>
 	<td>verifyConfirmation</td>
 	<td>このメールアカウントを削除してよろしいですか？</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -307,11 +302,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForText</td>
 	<td>//form/table/tbody/tr[1]/td[2]</td>
 	<td>testaccount2</td>
@@ -341,6 +331,7 @@
 	<td>//tr[7]/td[2]</td>
 	<td>暗号化なし</td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

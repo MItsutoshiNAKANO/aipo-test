@@ -38,6 +38,26 @@
 </tr>
 <tr>
 	<td>click</td>
+	<td>switchCheckbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajaxbuttonCheckboxDisable</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>選択したユーザーを無効化してよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>link=木村 一郎</td>
 	<td></td>
 </tr>

@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>ロールの編集_通常編集</title>
+<title>edit</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">ロールの編集_通常編集</td></tr>
+<tr><td rowspan="1" colspan="3">edit</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -22,7 +22,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>ロール一覧を見る_Button0</td>
 	<td></td>
 </tr>
@@ -62,14 +62,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>acl_role_name</td>
 	<td>test2</td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>500</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -84,6 +84,11 @@
 <tr>
 	<td>click</td>
 	<td>button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>0</td>
 	<td></td>
 </tr>
 <tr>
@@ -102,7 +107,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>ロール一覧を見る_Button0</td>
 	<td></td>
 </tr>
@@ -122,7 +127,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>test2</td>
 	<td></td>
 </tr>
@@ -153,7 +158,12 @@
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>test user1<br /> test user2</td>
+	<td>test user2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>test user1</td>
 	<td></td>
 </tr>
 <tr>
@@ -167,7 +177,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>ロール一覧を見る_Button0</td>
 	<td></td>
 </tr>
@@ -206,6 +216,7 @@
 	<td>このロールを削除してよろしいですか？</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>削除_2_一覧</title>
+<title>multi-delete2</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">削除_2_一覧</td></tr>
+<tr><td rowspan="1" colspan="3">multi-delete2</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -67,8 +67,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>waitForTextPresent</td>
+	<td>アドレス帳（会社情報）管理者</td>
+	<td></td>
+</tr>
+<tr>
+	<td>setSpeed</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
@@ -82,10 +87,11 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextPresent</td>
-	<td>アドレス帳（会社情報）管理者</td>
+	<td>setSpeed</td>
+	<td>0</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

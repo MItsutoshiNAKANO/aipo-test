@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">class_register</td></tr>
 </thead><tbody>
 <tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/aipo/portal/</td>
 	<td></td>
@@ -22,13 +27,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>分類管理_Button0</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>分類を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,8 +67,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>分類管理</td>
 	<td></td>
 </tr>
 <tr>
@@ -101,7 +106,6 @@
 	<td>ajaxbuttonClose</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

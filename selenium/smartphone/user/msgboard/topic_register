@@ -13,7 +13,12 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/aipo/portal/media-type/iphone/user/sample1/page/default.psml/js_peid/P-12cba59bc9b-10003?eventsubmit_domsgboard_topic_form=1&amp;entityid=new</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -22,13 +27,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//ul[@id='mainMenu']/li[4]/a/img</td>
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>link=トピック追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -46,7 +66,17 @@
 	<td>eventSubmit_doMsgboard_topic_insert</td>
 	<td></td>
 </tr>
-<!--トピック確認の作業を入れたいが不具合で表示されないため後回し-->
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>トピック追加_通常登録</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>

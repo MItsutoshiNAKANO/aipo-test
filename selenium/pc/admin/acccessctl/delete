@@ -72,18 +72,13 @@
 	<td>label=アドレス帳（社内アドレス）操作</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
+	<td>waitForTextPresent</td>
+	<td>アドレス帳（社内アドレス）管理者</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextNotPresent</td>
 	<td>アドレス帳（社内アドレス）操作　テスト１</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>アドレス帳（社内アドレス）管理者</td>
 	<td></td>
 </tr>
 </tbody></table>

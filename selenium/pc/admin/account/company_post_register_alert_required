@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>company_post_register_error_required</title>
+<title>company_post_register_alert_required</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">company_post_register_error_required</td></tr>
+<tr><td rowspan="1" colspan="3">company_post_register_alert_required</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -102,23 +102,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 部署名 』を入力してください。</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>ajaxbuttonClose</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -131,7 +121,6 @@
 	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

@@ -17,7 +17,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>link=システム管理</td>
 	<td></td>
 </tr>
@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>分類一覧</td>
 	<td></td>
 </tr>
 <tr>
@@ -57,8 +57,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>分類追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -82,8 +82,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>分類追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,12 +92,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>00000削除4</td>
 	<td></td>
 </tr>
@@ -118,7 +113,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -133,7 +128,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -151,7 +146,6 @@
 	<td>00000削除3</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

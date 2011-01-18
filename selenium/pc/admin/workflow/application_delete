@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>申請経路を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,11 +52,6 @@
 	<td>00000削除1</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>addSelection</td>
 	<td>tmp_member_from</td>
 	<td>label=木村 一郎</td>
@@ -72,8 +67,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>申請経路追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,8 +82,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>ワークフロー申請経路</td>
 	<td></td>
 </tr>
 <tr>
@@ -111,7 +106,6 @@
 	<td>00000削除1</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

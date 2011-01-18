@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>申請経路を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,11 +52,6 @@
 	<td>test</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>addSelection</td>
 	<td>tmp_member_from</td>
 	<td>label=山田 太郎</td>
@@ -72,18 +67,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>申請経路追加</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>申請経路管理_Button1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -97,18 +87,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>switchCheckbox</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -121,7 +106,6 @@
 	<td>選択した申請経路を削除してよろしいですか？</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

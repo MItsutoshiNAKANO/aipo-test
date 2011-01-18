@@ -22,11 +22,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>会社情報を編集する_Button2</td>
 	<td></td>
@@ -106,7 +101,6 @@
 	<td>ajaxbuttonClose</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

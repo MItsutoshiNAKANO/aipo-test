@@ -10,6 +10,10 @@
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="topic_register_alert">topic_register_alert</a></td></tr>
 <tr><td><a href="topic_register">topic_register</a></td></tr>
+<tr><td><a href="topic_edit_alert">topic_edit_alert</a></td></tr>
+<tr><td><a href="topic_delete">topic_delete</a></td></tr>
+<tr><td><a href="topic_reply_alert">topic_reply_alert</a></td></tr>
+<tr><td><a href="topic_reply">topic_reply</a></td></tr>
 </tbody></table>
 </body>
 </html>

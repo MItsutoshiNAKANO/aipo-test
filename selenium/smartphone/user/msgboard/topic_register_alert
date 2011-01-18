@@ -4,16 +4,21 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://59.106.173.26:8080/aipo/portal/" />
-<title>Topic_register_alert_required</title>
+<title>topic_register_alert</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Topic_register_alert_required</td></tr>
+<tr><td rowspan="1" colspan="3">topic_register_alert</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/aipo/portal/media-type/iphone/user/sample1/page/default.psml?action=controls.Restore</td>
+	<td>/aipo/portal/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -22,8 +27,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//ul[@id='mainMenu']/li[4]/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,8 +47,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>eventSubmit_doMsgboard_topic_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,6 +87,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertTextPresent</td>
 	<td>『 内容 』は10000文字以下で入力してください。</td>
 	<td></td>
@@ -69,6 +99,11 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>link=掲示板へ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -81,6 +116,7 @@
 	<td>link=ホーム</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

@@ -32,8 +32,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>申請経路を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,11 +52,6 @@
 	<td>00000削除3</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>addSelection</td>
 	<td>tmp_member_from</td>
 	<td>label=木村 一郎</td>
@@ -69,11 +64,6 @@
 <tr>
 	<td>click</td>
 	<td>eventSubmit_doWorkflow_route_insert</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -92,11 +82,6 @@
 	<td>00000削除4</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>addSelection</td>
 	<td>tmp_member_from</td>
 	<td>label=木村 一郎</td>
@@ -112,8 +97,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>申請経路追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -122,23 +107,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>00000削除4</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
 	<td>00000削除3</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
@@ -152,11 +127,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>ajaxbuttonCheckboxDelete</td>
 	<td></td>
@@ -167,8 +137,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>申請経路一覧</td>
 	<td></td>
 </tr>
 <tr>
@@ -181,7 +151,6 @@
 	<td>00000削除3</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

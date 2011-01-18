@@ -22,11 +22,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>施設を追加する_Button1</td>
 	<td></td>
@@ -47,12 +42,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>施設名『 会議室 』は既に登録されています。</td>
 	<td></td>
 </tr>
@@ -66,7 +56,6 @@
 	<td>施設一覧を見る_Button0</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

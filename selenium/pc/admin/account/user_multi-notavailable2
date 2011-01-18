@@ -32,11 +32,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>checksample3</td>
 	<td></td>
@@ -72,13 +67,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>ユーザー一覧を表示する_Button0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -99,7 +89,7 @@
 <tr>
 	<td>assertText</td>
 	<td>//tr[3]/td[2]</td>
-	<td>無効</td>
+	<td>有効</td>
 </tr>
 <tr>
 	<td>assertText</td>
@@ -117,8 +107,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForTextPresent</td>
+	<td>ユーザー詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -194,12 +184,7 @@
 <tr>
 	<td>type</td>
 	<td>member_username</td>
-	<td>sample2</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
+	<td>sample3</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -217,11 +202,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>member_username</td>
 	<td>test00</td>
@@ -232,12 +212,7 @@
 	<td>test00</td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>login_submit</td>
 	<td></td>
 </tr>
@@ -252,11 +227,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>type</td>
 	<td>member_username</td>
 	<td>admin</td>
@@ -265,11 +235,6 @@
 	<td>type</td>
 	<td>password</td>
 	<td>admin</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
 </tr>
 <tr>
 	<td>click</td>

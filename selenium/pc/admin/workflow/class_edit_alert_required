@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">class_edit_error_required</td></tr>
 </thead><tbody>
 <tr>
+	<td>setSpeed</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>/aipo/portal/</td>
 	<td></td>
@@ -32,8 +37,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>ワークフロー分類</td>
 	<td></td>
 </tr>
 <tr>
@@ -57,12 +62,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>『 分類 』を入力してください。</td>
 	<td></td>
 </tr>
@@ -77,13 +77,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>test1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextPresent</td>
-	<td>test1</td>
+	<td>waitForTextNotPresent</td>
+	<td>分類編集</td>
 	<td></td>
 </tr>
 <tr>
@@ -101,7 +101,6 @@
 	<td>ajaxbuttonClose</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

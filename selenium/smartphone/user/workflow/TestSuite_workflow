@@ -10,6 +10,14 @@
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="no_confirming_request">no_confirming_request</a></td></tr>
 <tr><td><a href="no_making_request">no_making_request</a></td></tr>
+<tr><td><a href="confirming_requests_PC_making">confirming_requests_PC_making</a></td></tr>
+<tr><td><a href="confirming_requests">confirming_requests</a></td></tr>
+<tr><td><a href="making_requests_PC_making">making_requests_PC_making</a></td></tr>
+<tr><td><a href="making_requests">making_requests</a></td></tr>
+<tr><td><a href="approve_confirming_request">approve_confirming_request</a></td></tr>
+<tr><td><a href="remand_confirming_request">remand_confirming_request</a></td></tr>
+<tr><td><a href="making_requests_detail">making_requests_detail</a></td></tr>
+<tr><td><a href="delete_making_request">delete_making_request</a></td></tr>
 </tbody></table>
 </body>
 </html>

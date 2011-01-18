@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>ユーザ情報の編集_通常登録_新規役職</title>
+<title>user_edit_newposi</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">ユーザ情報の編集_通常登録_新規役職</td></tr>
+<tr><td rowspan="1" colspan="3">user_edit_newposi</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -27,14 +27,14 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>ユーザー一覧を表示する_Button0</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=（全体）</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -142,9 +142,19 @@
 	<td>test01@testmobile.com</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>addSelection</td>
 	<td>tmp_group_from</td>
 	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -152,9 +162,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>removeSelection</td>
 	<td>group_to</td>
 	<td>label=商品開発部</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -312,13 +332,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -337,13 +352,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>login_submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -417,13 +427,8 @@
 	<td>次長</td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -442,13 +447,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>login_submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -464,11 +464,6 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -507,11 +502,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=次長</td>
 	<td></td>
@@ -532,11 +522,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>link=システム管理</td>
 	<td></td>
@@ -550,6 +535,11 @@
 	<td>clickAndWait</td>
 	<td>ユーザー一覧を表示する_Button0</td>
 	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//select</td>
+	<td>label=商品開発部</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -576,6 +566,7 @@
 	<td>ajaxbuttonClose</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

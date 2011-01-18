@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>edit_error_duplication</title>
+<title>edit_alert_duplication</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">edit_error_duplication</td></tr>
+<tr><td rowspan="1" colspan="3">edit_alert_duplication</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -28,7 +28,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -38,7 +38,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,12 +62,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>施設名『 会議室 』は既に登録されています。</td>
 	<td></td>
 </tr>
@@ -78,7 +73,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,13 +82,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>setSpeed</td>
-	<td>3000</td>
+	<td>500</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>link=test1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>施設詳細</td>
 	<td></td>
 </tr>
 <tr>

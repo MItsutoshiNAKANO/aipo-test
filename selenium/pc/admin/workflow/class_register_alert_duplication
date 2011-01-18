@@ -17,7 +17,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAndWait</td>
 	<td>link=ワークフロー管理</td>
 	<td></td>
 </tr>
@@ -27,8 +27,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>分類を追加する</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,12 +52,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
+	<td>waitForTextPresent</td>
 	<td>分類名『 学外通路 』は既に登録されています。</td>
 	<td></td>
 </tr>
@@ -68,7 +63,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -76,12 +71,6 @@
 	<td>ajaxbuttonClose</td>
 	<td></td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>分類管理_Button0</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>

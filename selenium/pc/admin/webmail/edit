@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="" />
-<title>接続設定_編集_通常</title>
+<title>edit</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">接続設定_編集_通常</td></tr>
+<tr><td rowspan="1" colspan="3">edit</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -27,18 +27,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>メールアカウント管理_Button0</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -83,7 +78,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -93,7 +88,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>2000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -125,11 +120,6 @@
 	<td>assertText</td>
 	<td>//tr[7]/td[2]</td>
 	<td>暗号化なし</td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -187,18 +177,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>メールアカウント管理</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>メールアカウント管理_Button0</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -292,11 +277,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>waitForText</td>
 	<td>//form/table/tbody/tr[1]/td[2]</td>
 	<td>testaccount</td>
@@ -321,6 +301,7 @@
 	<td>//tr[6]/td[2]</td>
 	<td>SMTP認証（ユーザーID：testuser）</td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

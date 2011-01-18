@@ -67,7 +67,7 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>//tr[@id='aimluck_widget_Menuitem_2']/td[2]</td>
 	<td></td>
 </tr>
@@ -107,8 +107,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -147,8 +147,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -162,13 +162,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertTextPresent</td>
-	<td>係長</td>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>setSpeed</td>
-	<td>1000</td>
+	<td>assertTextPresent</td>
+	<td>係長</td>
 	<td></td>
 </tr>
 <tr>
@@ -177,9 +177,19 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>役職詳細</td>
+	<td></td>
+</tr>
+<tr>
 	<td>assertText</td>
 	<td>//div[4]/div/div/div/div/div/div/div/div/div/div/div/form/table/tbody/tr/td[2]</td>
 	<td>係長</td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
 </tr>
 <tr>
 	<td>click</td>
@@ -187,8 +197,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=主任A</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>役職詳細</td>
 	<td></td>
 </tr>
 <tr>
@@ -201,12 +221,6 @@
 	<td>この役職を削除してよろしいですか？</td>
 	<td></td>
 </tr>
-<tr>
-	<td>setSpeed</td>
-	<td>0</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>

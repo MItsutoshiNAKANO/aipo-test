@@ -47,8 +47,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>waitForPageToLoad</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -61,7 +61,11 @@
 	<td>//tr[@id='aimluck_widget_Menuitem_0']/td[2]</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>

@@ -22,6 +22,14 @@
 <tr><td><a href="register_repetition_day_period">register_repetition_day_period</a></td></tr>
 <tr><td><a href="register_repetition_day_noperiod">register_repetition_day_noperiod</a></td></tr>
 <tr><td><a href="register_open">register_open</a></td></tr>
+<tr><td><a href="edit_day_cancel">edit_day_cancel</a></td></tr>
+<tr><td><a href="edit_day">edit_day</a></td></tr>
+<tr><td><a href="edit_repeat_cancel">edit_repeat_cancel</a></td></tr>
+<tr><td><a href="edit_repeat">edit_repeat</a></td></tr>
+<tr><td><a href="edit_period_cancel">edit_period_cancel</a></td></tr>
+<tr><td><a href="edit_period">edit_period</a></td></tr>
+<tr><td><a href="edit_day_alert">edit_day_alert</a></td></tr>
+<tr><td><a href="edit_repeat_alert">edit_repeat_alert</a></td></tr>
 </tbody></table>
 </body>
 </html>

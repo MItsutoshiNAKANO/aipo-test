@@ -32,6 +32,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForTextPresent</td>
+	<td>分類一覧</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>ajaxbuttonCheckboxDelete</td>
 	<td></td>
@@ -41,7 +46,6 @@
 	<td>チェックボックスを１つ以上選択してください。</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

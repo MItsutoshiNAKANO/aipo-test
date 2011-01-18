@@ -27,13 +27,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>click</td>
 	<td>勤務形態一覧を見る_Button1</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>選択した勤務形態を</td>
 	<td></td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,8 +62,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextPresent</td>
+	<td>勤務形態追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -77,8 +77,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>3000</td>
+	<td>waitForTextNotPresent</td>
+	<td>勤務形態追加</td>
 	<td></td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>3000</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -107,11 +107,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>setSpeed</td>
-	<td>5000</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>勤務形態一覧を見る_Button1</td>
 	<td></td>
@@ -121,12 +116,6 @@
 	<td>削除用1</td>
 	<td></td>
 </tr>
-<tr>
-	<td>setSpeed</td>
-	<td>0</td>
-	<td></td>
-</tr>
-
 </tbody></table>
 </body>
 </html>
