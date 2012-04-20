@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://hudson.aipo.com:8080/aipo/portal/" />
+<title>report_application_add</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">report_application_add</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/aipo/portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.auiIcon.auiIconSetting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@name='pname' and @value='Report']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=eventSubmit_doTodo_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=報告書</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=報告書追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='roundWrapper']/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td/div/div/div/div/div/div/div/div/div/table/tbody/tr/td[2]/div[3]/div/div/div/div/div/div/div/div/table/tbody/tr/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#menubar_P-134eb17b3bc-10000 &gt; ul &gt; li &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>報告書</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>アプリ名</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>報告書表示件数（通常時）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>報告書表示件数（最大化時）</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=eventSubmit_doUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=eventSubmit_doDefault</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=eventSubmit_doCancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=eventSubmit_doDefault</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=p1a-rows</td>
+	<td>label=5件</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=p1a-rows</td>
+	<td>label=20件</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=eventSubmit_doCancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@onclick=&quot;aipo.customize.showMenu('');&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#menubar_P-134eb17b3bc-10000 &gt; ul &gt; li.last &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このアプリを削除してもよろしいですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@onclick=&quot;aipo.customize.showMenu('');&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#menubar_P-134eb17b3bc-10000 &gt; ul &gt; li.last &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>このアプリを削除してもよろしいですか？</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

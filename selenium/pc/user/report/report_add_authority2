@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://hudson.aipo.com:8080/aipo/portal/" />
+<title>report_add_authority3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">report_add_authority3</td></tr>
+</thead><tbody>
+<!--報告書追加（社内参加者・通知先）確認-->
+<tr>
+	<td>open</td>
+	<td>/aipo/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=報告書追加</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=eventSubmit_doReport_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 タイトル 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 タイトル 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 内容 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 通知先 』を指定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=report_name</td>
+	<td>報告書追加送信確認</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=eventSubmit_doReport_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 内容 』を入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 通知先 』を指定してください。</td>
+	<td></td>
+</tr>
+<!--内容確認-->
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=eventSubmit_doReport_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 内容 』は1000文字以下で入力してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>報告書追加確認</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=eventSubmit_doReport_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>『 通知先 』を指定してください。</td>
+	<td></td>
+</tr>
+<!--社内参加者確認-->
+<tr>
+	<td>click</td>
+	<td>css=input.alignright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>左側に社内参加者を追加してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>社内参加者一覧</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=木村 一郎</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_member_from</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=members</td>
+	<td>label=木村 一郎</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=members</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=members</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=members</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=members</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=members</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=members</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_member_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<!--通知先確認-->
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=田村 涼子</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=positions</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=positions</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=positions</td>
+	<td>label=山田 太郎</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=positions</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=木村 一郎</td>
+</tr>
+<tr>
+	<td>removeSelection</td>
+	<td>id=tmp_map_from</td>
+	<td>label=HTML Validator</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button_map_add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=eventSubmit_doReport_insert</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>報告書「報告書追加送信確認」 がありました。</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

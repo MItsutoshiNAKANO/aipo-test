@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://hudson.aipo.com:8080/aipo/portal/" />
+<title>detail_edit</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">detail_edit</td></tr>
+</thead><tbody>
+<!--詳細欄の編集・削除確認（最大化画面）-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=マイページ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=報告書</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>報告書詳細１</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=報告書詳細１</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=ajaxbuttonEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>eventSubmit_doReport_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=note</td>
+	<td>報告書追加<br />編集を加える</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=eventSubmit_doReport_update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=報告書詳細１</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>編集を加える</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=ajaxbuttonDelete</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
